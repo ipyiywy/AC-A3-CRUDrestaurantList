@@ -5,7 +5,8 @@
   <div class="search-bar-outer">
     <div class="search-bar-inner">
       <form action="/search">
-        <h4 class="mb-2">尋找餐廳：</h4>
+        <h4 style="float: left" class="mb-2">尋找餐廳：</h4>
+        <a href="#" style="float: right;"><h4> + 新增餐廳</h4><div></div></a>
         <div class="input-group">
           <input type="text" name="keyword" class="form-control" placeholder="輸入餐廳、分類" aria-label="Restaurant Name..." value="" aria-describedby="search-button">
           <div class="input-group-append">
@@ -38,10 +39,14 @@
                 {{this.rating}}
                 <i class="fas fa-star fa-xs"></i>
               </span>
-
             </div>
-          </div>
         </a>
+             <div class="card-footer">
+             <a href="#">Edit</a>
+             <a href="/restaurants/{{this.id}}">Detail</a>
+             <a href="#">Delete</a>
+    </div>
+          </div>
 {{/each}}
      </div>
  {{ else }}

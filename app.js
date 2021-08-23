@@ -4,7 +4,7 @@ const app = express()
 const mongoose = require('mongoose')
 const port = 3000
 const restaurantsList = require('./restaurants.json')
-const RestautantSchema = require('./models/restaurantSchema')
+const RestautantSchema = require('./models/restaurant')
 
 
 app.engine('hbs', exphbs({ defaultLayout: 'main', extname: '.hbs' }))
