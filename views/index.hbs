@@ -25,7 +25,7 @@
       <div class="card-columns">
 
 {{#each restaurant}}
-<a href="/restaurants/{{this._id}}" class="text-secondary">
+<a href="./restaurant/detail/{{this._id}}" class="text-secondary">
           <div class="card mb-3">
             <img class="card-img-top" src="{{this.image}}" alt="{{this.name}}">
             <div class="card-body p-3">
@@ -42,8 +42,8 @@
             </div>
         </a>
              <div class="card-footer">
-             <a href="#">Edit</a>
-             <a href="/restaurants/{{this._id}}">Detail</a>
+             <a href="/restaurant">Edit</a>
+             <a href="./restaurant/{{this._id}}">Detail</a>
              <a href="#">Delete</a>
     </div>
           </div>
