@@ -42,10 +42,12 @@
             </div>
         </a>
              <div class="card-footer">
-             <a href="/restaurant">Edit</a>
-             <a href="./restaurant/{{this._id}}">Detail</a>
-             <a href="#">Delete</a>
-    </div>
+             <a href="/restaurant/detail/{{this._id}}/edit">Edit</a>
+             <a href="/restaurant/detail/{{this._id}}">Detail</a>
+            <form action="./restaurant/{{ this._id }}/delete" method="POST" style="display: inline">
+            <button type="submit">delete</button>
+            </form>
+                </div>
           </div>
 {{/each}}
      </div>

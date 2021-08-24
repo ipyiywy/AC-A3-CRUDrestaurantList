@@ -1,0 +1,39 @@
+<form action="/restaurant" method="POST">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input required name="name" type="text" class="form-control" id="name" value="{{ restaurant.name }}">
+  </div>
+  <div class="form-group">
+    <label for="name_en">Name in ENG</label>
+    <input required name="name_en" type="text" class="form-control" id="name_en" value="{{ restaurant.name_en }}">
+  </div>
+   <div class="form-group">
+    <label for="category">Category</label>
+    <input required name="category" type="text" class="form-control" id="category" value="{{ restaurant.category }}">
+  </div>
+   <div class="form-group">
+    <label for="image">Image Link</label>
+    <input required name="image" type="url" class="form-control" id="image" value="{{ restaurant.image }}">
+  </div>
+ <div class="form-group">
+    <label for="location">Location</label>
+    <input required name="location" type="text" class="form-control" id="location" value="{{ restaurant.location }}">
+  </div>
+ <div class="form-group">
+    <label for="phone">Phone</label>
+    <input required name="phone" type="text" class="form-control" id="phone" value="{{ restaurant.phone }}">
+  </div>
+ <div class="form-group">
+    <label for="google_map">Google Map</label>
+    <input required name="google_map" type="url" class="form-control" id="google_map" value="{{ restaurant.google_map }}">
+  </div>
+ <div class="form-group">
+    <label for="rating">Rating</label>
+    <input required name="rating" type="number" maxlength="5" minlength="1" class="form-control" id="rating" value="{{ restaurant.rating }}">
+  </div>
+   <div class="form-group">
+    <label for="description">Description</label>
+    <input required name="description" type="text" class="form-control" id="description" value="{{ restaurant.description }}">
+  </div>
+   <button type="submit" class="btn btn-primary">Submit</button>
+</form>
