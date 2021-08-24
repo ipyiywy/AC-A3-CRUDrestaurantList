@@ -6,7 +6,7 @@
     <div class="search-bar-inner">
       <form action="/search">
         <h4 style="float: left" class="mb-2">尋找餐廳：</h4>
-        <a href="#" style="float: right;"><h4> + 新增餐廳</h4><div></div></a>
+        <a href="./restaurant/new" style="float: right;"><h4> + 新增餐廳</h4><div></div></a>
         <div class="input-group">
           <input type="text" name="keyword" class="form-control" placeholder="輸入餐廳、分類" aria-label="Restaurant Name..." value="" aria-describedby="search-button">
           <div class="input-group-append">
@@ -21,11 +21,11 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-10 col-12 mx-auto">
-{{# if restaurants }}
+{{# if restaurant }}
       <div class="card-columns">
 
-{{#each restaurants}}
-<a href="/restaurants/{{this.id}}" class="text-secondary">
+{{#each restaurant}}
+<a href="/restaurants/{{this._id}}" class="text-secondary">
           <div class="card mb-3">
             <img class="card-img-top" src="{{this.image}}" alt="{{this.name}}">
             <div class="card-body p-3">
@@ -43,7 +43,7 @@
         </a>
              <div class="card-footer">
              <a href="#">Edit</a>
-             <a href="/restaurants/{{this.id}}">Detail</a>
+             <a href="/restaurants/{{this._id}}">Detail</a>
              <a href="#">Delete</a>
     </div>
           </div>
