@@ -1,7 +1,5 @@
  <div class="banner"></div>
- <a href="./{{restaurant._id}}/edit">Edit</a>
- <a href="/">Back</a>
-</header>
+ </header>
 
 <h1 class="mb-1 restaurant-show-title">{{restaurant.name}}</h1>
 <div class="container">
@@ -40,6 +38,11 @@
        </p>
 
       <img class="rounded mx-auto d-block mb-4 w-100" src="{{restaurant.image}}" alt="{{restaurant.name}}" style="max-width: 600px;">
+
+<div class="page-action">
+<a href="./{{restaurant._id}}/edit"><button type="button" class="btn btn-light">Edit</button></a>
+<a href="/"><button type="button" class="btn btn-light">Back</button></a>
+</div>
     </div>
   </div>
 </div>

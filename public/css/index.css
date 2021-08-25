@@ -10,6 +10,7 @@ header {
   color: #226089;
 }
 
+/*Index Page*/
 .banner {
   position: relative;
   z-index: -1;
@@ -92,4 +93,10 @@ header {
   .card img {
     height: auto;
   }
+}
+
+/*Detail Page*/
+.page-action {
+  text-align: center;
+  margin: 30px 0;
 }
