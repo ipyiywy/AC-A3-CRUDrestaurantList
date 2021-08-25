@@ -1,4 +1,4 @@
-<form action="/restaurant" method="POST">
+<form action="/restaurant/detail/{{restaurant._id}}/edit" method="POST">
   <div class="form-group">
     <label for="name">Name</label>
     <input required name="name" type="text" class="form-control" id="name" value="{{ restaurant.name }}">
@@ -29,7 +29,7 @@
   </div>
  <div class="form-group">
     <label for="rating">Rating</label>
-    <input required name="rating" type="number" maxlength="5" minlength="1" class="form-control" id="rating" value="{{ restaurant.rating }}">
+    <input required name="rating" type="number" step="0.1" max="5.0" min="1.0" class="form-control" id="rating" value="{{ restaurant.rating }}">
   </div>
    <div class="form-group">
     <label for="description">Description</label>
