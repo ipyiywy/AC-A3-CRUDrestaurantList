@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
-const Restaurant = require('../../models/restaurant')
 
+const Restaurant = require('../../models/restaurant')
 
 //CREATE FUNCTION
 //Create new page route
@@ -79,7 +79,7 @@ router.put('/detail/:id', (req, res) => {
         restaurant.description = description
         return restaurant.save()
     })
-    .then(() => res.redirect(`/restaurant/detail/${id}`))
+    .then(() => res.redirect(`/restaurants/detail/${id}`))
     .catch(error => console.log(error))
 })
 
