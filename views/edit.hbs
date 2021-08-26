@@ -1,5 +1,5 @@
 <div class="container">
-<form action="/restaurant/detail/{{restaurant._id}}/edit" method="POST">
+<form action="/restaurant/detail/{{restaurant._id}}?_method=PUT" method="POST">
   <div class="form-group">
     <label for="name">Name</label>
     <input required name="name" type="text" class="form-control" id="name" value="{{ restaurant.name }}">
